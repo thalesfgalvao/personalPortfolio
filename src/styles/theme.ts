@@ -22,6 +22,11 @@ export const lightTheme = {
     large: "3.2rem",
     huge: "5.6rem",
   },
+  fontWeight: {
+    light: "300",
+    normal: "500",
+    bold: "700",
+  },
 };
 
 export const darkTheme = {
