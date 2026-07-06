@@ -9,16 +9,11 @@ export const lightTheme = {
     success: "#68DB6B",
     warning: "#E09B35",
     error: "#E33F36",
-    background: "#FFFFFF",
-    bodyContainer: "#FAFAFA",
+    background: "#FAFAFA",
+    bodyContainer: "#FFFFFF",
     headline: "#191C1D",
     body: "#454748",
     label: "#AAABAC",
-  },
-  borderRadius: {
-    light: "1rem",
-    medium: "2rem",
-    huge: "3rem",
   },
   sizes: {
     xsmall: "1.2rem",
@@ -26,6 +21,11 @@ export const lightTheme = {
     medium: "2.4rem",
     large: "3.2rem",
     huge: "5.6rem",
+  },
+  fontWeight: {
+    light: "300",
+    normal: "500",
+    bold: "700",
   },
 };
 
@@ -39,11 +39,6 @@ export const darkTheme = {
     warning: "#E09B35",
     error: "#E33F36",
     background: "#2E3132",
-  },
-  borderRadius: {
-    light: "1rem",
-    medium: "2rem",
-    huge: "3rem",
   },
   sizes: {
     xsmall: "1.2rem",
