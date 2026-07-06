@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 
 export const ProfileInfoContainer = styled.div`
   width: 100%;
+  grid-row: 1/2;
   gap: 3rem;
   display: flex;
   flex-direction: column;

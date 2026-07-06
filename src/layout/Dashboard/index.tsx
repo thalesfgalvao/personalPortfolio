@@ -1,11 +1,16 @@
+import Nav from "./Nav";
+import ProfileInfo from "./ProfileInfo";
+import SocialMedia from "./SocialMedia";
 import * as S from "./style";
 
-const Dahsboard = () => {
+const Dashboard = () => {
   return (
     <S.MainContainer>
-      <p>Oi</p>
+      <ProfileInfo />
+      <Nav />
+      <SocialMedia />
     </S.MainContainer>
   );
 };
 
-export default Dahsboard;
+export default Dashboard;
