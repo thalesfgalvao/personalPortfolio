@@ -1,10 +1,14 @@
-
+import { GlobalStyle } from "./styles/GlobalStyle";
+import { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme } from "./styles/theme";
+import { Routes } from "./routes";
 
 const App = () => {
   return (
-    <>
-      <h1>Hello World</h1>
-    </>
+    <ThemeProvider theme={lightTheme}>
+      <GlobalStyle />
+      <Routes />
+    </ThemeProvider>
   );
 };
 
