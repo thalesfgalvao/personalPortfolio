@@ -5,4 +5,19 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  @media ${theme.breakpoints.mobile} {
+    display: flex;
+    flex-direction: row;
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: space-around;
+  }
+  @media ${theme.breakpoints.tablet} {
+    display: flex;
+    flex-direction: row;
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: space-around;
+  }
 `;

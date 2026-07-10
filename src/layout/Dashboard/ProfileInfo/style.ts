@@ -1,12 +1,21 @@
 import styled, { css } from "styled-components";
 
 export const ProfileInfoContainer = styled.div`
-  width: 100%;
   grid-row: 1/2;
-  gap: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
+  @media ${theme.breakpoints.mobile} {
+    grid-column: 1;
+    grid-row: 1;
+    justify-content: center;
+  }
+  @media ${theme.breakpoints.tablet} {
+    grid-column: 1;
+    grid-row: 1;
+    justify-content: center;
+  }
 `;
 
 export const ProfilePicture = styled.div`
@@ -33,6 +42,19 @@ export const ProfilePicture = styled.div`
         rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
       cursor: pointer;
     }
+
+    @media ${theme.breakpoints.mobile} {
+      width: 8rem;
+      height: 8rem;
+      max-height: 100%;
+      border-radius: 50%;
+    }
+    @media ${theme.breakpoints.tablet} {
+      width: 13rem;
+      height: 13rem;
+      max-height: 100%;
+      border-radius: 50%;
+    }
   `}
 `;
 
@@ -42,12 +64,28 @@ export const ProfileInformation = styled.div`
   width: 100%;
   align-items: center;
   gap: 0.5rem;
+  @media ${theme.breakpoints.mobile} {
+    display: none;
+    visibility: hidden;
+  }
+  @media ${theme.breakpoints.tablet} {
+    display: none;
+    visibility: hidden;
+  }
 `;
 
 export const ProfileTitle = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.sizes.medium};
     font-weight: 600;
+    @media ${theme.breakpoints.mobile} {
+      display: none;
+      visibility: hidden;
+    }
+    @media ${theme.breakpoints.tablet} {
+      display: none;
+      visibility: hidden;
+    }
   `}
 `;
 
@@ -56,5 +94,13 @@ export const ProfileLabel = styled.p`
     font-size: ${theme.sizes.small};
     color: ${theme.colors.label};
     font-weight: 500;
+    @media ${theme.breakpoints.mobile} {
+      display: none;
+      visibility: hidden;
+    }
+    @media ${theme.breakpoints.tablet} {
+      display: none;
+      visibility: hidden;
+    }
   `}
 `;
