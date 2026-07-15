@@ -48,6 +48,9 @@ export const ButtonMenuItem = styled.div`
       padding: 0px;
       width: 100%;
       justify-content: center;
+      svg {
+        font-size: ${theme.sizes.medium};
+      }
       &:hover {
         border-left: 0;
         border-bottom: 0.5rem solid ${theme.colors.primary};
@@ -58,13 +61,62 @@ export const ButtonMenuItem = styled.div`
         cursor: pointer;
       }
     }
-    @media ${theme.breakpoints.desktop} {
+    @media ${theme.breakpoints.tablet} {
       padding: 0px;
       width: 100%;
       justify-content: center;
+      svg {
+        font-size: ${theme.sizes.large};
+      }
       &:hover {
         border-left: 0;
         border-bottom: 0.5rem solid ${theme.colors.primary};
+        background: ${({ theme }) => lighten(theme.colors.primary, 0.8)};
+        border-radius: 0.5rem;
+        padding: 2rem 0.5rem;
+        transition: 0.7s ease-in-out;
+        cursor: pointer;
+      }
+    }
+    @media ${theme.breakpoints.laptop} {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      color: ${theme.colors.body};
+      transition: 0.7s;
+      padding: 2rem 0rem;
+      align-items: center;
+      svg {
+        font-size: ${theme.sizes.large};
+      }
+
+      &:hover {
+        font-weight: ${theme.fontWeight.bold};
+        color: ${theme.colors.primary};
+        border-left: 0.5rem solid ${theme.colors.primary};
+        background: ${({ theme }) => lighten(theme.colors.primary, 0.8)};
+        border-radius: 0.5rem;
+        padding: 2rem 0.5rem;
+        transition: 0.7s ease-in-out;
+        cursor: pointer;
+      }
+    }
+    @media ${theme.breakpoints.desktop} {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      color: ${theme.colors.body};
+      transition: 0.7s;
+      padding: 2rem 0rem;
+      align-items: center;
+      svg {
+        font-size: ${theme.sizes.large};
+      }
+
+      &:hover {
+        font-weight: ${theme.fontWeight.bold};
+        color: ${theme.colors.primary};
+        border-left: 0.5rem solid ${theme.colors.primary};
         background: ${({ theme }) => lighten(theme.colors.primary, 0.8)};
         border-radius: 0.5rem;
         padding: 2rem 0.5rem;
@@ -77,7 +129,7 @@ export const ButtonMenuItem = styled.div`
 
 export const MenuOption = styled.label`
   ${({ theme }) => css`
-    font-size: ${theme.sizes.small};
+    font-size: ${theme.sizes.normal};
     font-weight: ${theme.fontWeight.normal};
     transition: 0.7s ease-in-out;
     cursor: pointer;
@@ -92,6 +144,8 @@ export const MenuOption = styled.label`
   `}
 `;
 
-export const MenuIcon = styled.div`
-  ${({ theme }) => css``}
+export const MenuIcon = styled.span`
+  ${({ theme }) => css`
+    margin-left: 0.5rem;
+  `}
 `;
