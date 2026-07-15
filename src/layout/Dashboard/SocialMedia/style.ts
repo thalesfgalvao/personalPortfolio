@@ -61,13 +61,11 @@ export const Link = styled.a`
       }
     }
     @media ${theme.breakpoints.laptop} {
-      margin-left: 0.5rem;
       svg {
         font-size: ${theme.sizes.large};
       }
     }
     @media ${theme.breakpoints.desktop} {
-      margin-left: 0.5rem;
       svg {
         font-size: ${theme.sizes.large};
       }

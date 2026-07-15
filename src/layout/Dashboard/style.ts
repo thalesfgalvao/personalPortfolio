@@ -8,6 +8,7 @@ export const MainContainer = styled.div`
     grid-template-rows: 20% 70% 10%;
     background-color: ${theme.colors.bodyContainer};
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 2rem;
     @media ${theme.breakpoints.mobile} {
       grid-column: 1/4;
       grid-row: 1/2;

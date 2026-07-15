@@ -7,7 +7,6 @@ export const ProfileInfoContainer = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin: 1rem;
     @media ${theme.breakpoints.mobile} {
       grid-column: 1;
       grid-row: 1;

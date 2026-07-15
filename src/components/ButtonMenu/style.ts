@@ -145,7 +145,5 @@ export const MenuOption = styled.label`
 `;
 
 export const MenuIcon = styled.span`
-  ${({ theme }) => css`
-    margin-left: 0.5rem;
-  `}
+  ${({ theme }) => css``}
 `;
