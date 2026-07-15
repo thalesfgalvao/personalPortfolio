@@ -16,16 +16,23 @@ export const lightTheme = {
     label: "#AAABAC",
   },
   sizes: {
-    xsmall: "1.2rem",
-    small: "1.6rem",
-    medium: "2.4rem",
-    large: "3.2rem",
-    huge: "5.6rem",
+    xsmall: "1rem",
+    small: "1.2rem",
+    normal: "1.6rem",
+    medium: "2rem",
+    large: "3rem",
+    huge: "5rem",
   },
   fontWeight: {
     light: "300",
     normal: "500",
     bold: "700",
+  },
+  breakpoints: {
+    mobile: "(max-width: 767px)",
+    tablet: "(min-width: 768px) and (max-width: 1023px)",
+    laptop: "(min-width: 1024px) and (max-width: 1919px)",
+    desktop: "(min-width: 1920px)",
   },
 };
 
