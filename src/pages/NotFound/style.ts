@@ -29,7 +29,7 @@ export const BodyContent = styled.p`
 export const Label = styled.p`
   ${({ theme }) => css`
     color: ${theme.colors.label};
-    font-size: ${theme.sizes.xsmall};
+    font-size: ${theme.sizes.small};
     font-weight: 300;
   `}
 `;

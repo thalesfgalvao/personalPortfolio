@@ -35,7 +35,7 @@ export const Link = styled.a`
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    font-size: ${theme.sizes.small};
+    font-size: ${theme.sizes.normal};
     color: ${theme.colors.body};
     transition: 0.2s;
     text-decoration: none;
