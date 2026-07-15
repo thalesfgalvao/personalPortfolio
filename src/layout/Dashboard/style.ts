@@ -24,5 +24,11 @@ export const MainContainer = styled.div`
       grid-template-columns: 20% 60% 20%;
       grid-template-rows: 100%;
     }
+    @media ${theme.breakpoints.desktop} {
+      grid-column: 1/2;
+      grid-row: 1/4;
+      display: grid;
+      grid-template-rows: 20% 70% 10%;
+    }
   `}
 `;
