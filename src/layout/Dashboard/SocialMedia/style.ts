@@ -1,27 +1,29 @@
 import styled, { css } from "styled-components";
 
 export const SocialMediaWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  grid-row: 3;
-  gap: 2rem;
+  ${({ theme }) => css`
+    display: flex;
+    flex-direction: column;
+    grid-row: 3;
+    gap: 2rem;
 
-  @media ${theme.breakpoints.mobile} {
-    display: flex;
-    flex-direction: column;
-    grid-row: 1;
-    grid-column: 3;
-    justify-content: center;
-    align-items: center;
-  }
-  @media ${theme.breakpoints.tablet} {
-    display: flex;
-    flex-direction: column;
-    grid-row: 1;
-    grid-column: 3;
-    justify-content: center;
-    align-items: center;
-  }
+    @media ${theme.breakpoints.mobile} {
+      display: flex;
+      flex-direction: column;
+      grid-row: 1;
+      grid-column: 3;
+      justify-content: center;
+      align-items: center;
+    }
+    @media ${theme.breakpoints.tablet} {
+      display: flex;
+      flex-direction: column;
+      grid-row: 1;
+      grid-column: 3;
+      justify-content: center;
+      align-items: center;
+    }
+  `}
 `;
 
 export const SocialMediaItem = styled.div`
