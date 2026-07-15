@@ -7,6 +7,7 @@ export const ProfileInfoContainer = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    margin: 1rem;
     @media ${theme.breakpoints.mobile} {
       grid-column: 1;
       grid-row: 1;
@@ -26,8 +27,8 @@ export const ProfilePicture = styled.div`
     font-size: 1.2rem;
     align-items: center;
     justify-content: center;
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 9rem;
     background-color: ${theme.colors.secondary};
     border-radius: 50%;
     transition:
@@ -46,14 +47,14 @@ export const ProfilePicture = styled.div`
     }
 
     @media ${theme.breakpoints.mobile} {
-      width: 5rem;
-      height: 5rem;
+      width: 6rem;
+      height: 6rem;
       max-height: 100%;
       border-radius: 50%;
     }
     @media ${theme.breakpoints.tablet} {
-      width: 13rem;
-      height: 13rem;
+      width: 8rem;
+      height: 8rem;
       max-height: 100%;
       border-radius: 50%;
     }
@@ -90,12 +91,16 @@ export const ProfileTitle = styled.p`
       display: none;
       visibility: hidden;
     }
+    @media ${theme.breakpoints.laptop} {
+      font-size: ${theme.sizes.normal};
+      font-weight: 600;
+    }
   `}
 `;
 
 export const ProfileLabel = styled.p`
   ${({ theme }) => css`
-    font-size: ${theme.sizes.small};
+    font-size: ${theme.sizes.normal};
     color: ${theme.colors.label};
     font-weight: 500;
     @media ${theme.breakpoints.mobile} {
@@ -105,6 +110,10 @@ export const ProfileLabel = styled.p`
     @media ${theme.breakpoints.tablet} {
       display: none;
       visibility: hidden;
+    }
+    @media ${theme.breakpoints.laptop} {
+      font-size: ${theme.sizes.small};
+      font-weight: 600;
     }
   `}
 `;
