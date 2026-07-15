@@ -6,6 +6,6 @@ export const Wrapper = styled.main`
     height: 100dvh;
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 15% 70% 15%;
+    grid-template-rows: 5% 90% 5%;
   `}
 `;
